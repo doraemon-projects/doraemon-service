@@ -47,17 +47,11 @@
     <dependencies>
         <dependency>
             <groupId>org.doraemon.framework</groupId>
-            <artifactId>doraemon-base</artifactId>
+            <artifactId>doraemon-core</artifactId>
         </dependency>
         <dependency>
             <groupId>jakarta.ws.rs</groupId>
             <artifactId>jakarta.ws.rs-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

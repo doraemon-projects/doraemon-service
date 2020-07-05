@@ -11,11 +11,11 @@
     </parent>
 
     <groupId>org.doraemon.framework</groupId>
-    <artifactId>doraemon-lookup-service</artifactId>
+    <artifactId>doraemon-registry-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>Doraemon Lookup Service</name>
-    <description>Doraemon Lookup Service</description>
+    <name>Doraemon Registry Service</name>
+    <description>Doraemon Registry Service</description>
     <url>https://github.com/doraemon-projects/doraemon-framework</url>
     <organization>
         <name>jfteam</name>
@@ -51,6 +51,10 @@
         <dependency>
             <groupId>org.doraemon.framework</groupId>
             <artifactId>doraemon-base</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.doraemon.framework</groupId>
+            <artifactId>doraemon-registry-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.doraemon.framework</groupId>

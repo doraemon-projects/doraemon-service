@@ -9,6 +9,13 @@
     <name>Doraemon Services</name>
     <description>Doraemon Services</description>
 
+    <modules>
+        <module>./doraemon-lookup/doraemon-lookup-api</module>
+        <module>./doraemon-lookup/doraemon-lookup-service</module>
+        <module>./doraemon-registry/doraemon-registry-api</module>
+        <module>./doraemon-registry/doraemon-registry-service</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
@@ -20,23 +27,10 @@
         <dependencies>
             <dependency>
                 <groupId>org.doraemon.framework</groupId>
-                <artifactId>doraemon-jaxrs-extension</artifactId>
+                <artifactId>doraemon-framework-dependencies</artifactId>
                 <version>${doraemon-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.doraemon.framework</groupId>
-                <artifactId>doraemon-base</artifactId>
-                <version>${doraemon-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>jakarta.ws.rs</groupId>
-                <artifactId>jakarta.ws.rs-api</artifactId>
-                <version>2.1.6</version>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.12</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
